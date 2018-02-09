@@ -1,0 +1,17 @@
+{
+  "name": "control",
+  "version": "1.0.0",
+  "description": "Allows control of remote devices for interface from the browser",
+  "main": "control.js",
+  "scripts": {
+    "start": "node control.js"
+  },
+  "author": "Allen Wheeler",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "net": "^1.0.2",
+    "readline-sync": "^1.4.7"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="control.js"></script>
+<script>
+var connection = new WebSocket('ws://localhost:8001');
+connection.onmessage = function (event) { 
+document.getElementById('result0').value=event.data;
+};
+</script>
+</head>
+<body>
+
+<div>
+	<h1>control server</h1>
+</div>
+
+<div>
+<p>
+Result: <output type=text id="result0" value="" readonly> </output>
+</p>
+</div>
+
+<input type=text 
+onchange="connection.send(this.value); ">
+
+</body>
+</html>
