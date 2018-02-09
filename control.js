@@ -50,7 +50,7 @@ function OpenConnection(){
 
 function SendData(lv) {
 	if (!client) {
-		console.log("Connection is not open");
+		console.log("Connection is not active");
 		setTimeout(function () {
 			menu();
 		}, 1000);
